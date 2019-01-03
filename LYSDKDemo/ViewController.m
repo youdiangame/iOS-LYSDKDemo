@@ -39,7 +39,6 @@
         [tempBtn setTitle:obj forState:UIControlStateNormal];
         [tempBtn setTag:idx];
         [tempBtn setBackgroundImage:btbImage forState:UIControlStateNormal];
-        [tempBtn setBackgroundImage:btnImageHighlighted forState:UIControlStateSelected];
         [tempBtn addTarget:self action:@selector(tempBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:tempBtn];
     }];
