@@ -30,7 +30,7 @@
     CGFloat itemMar = 18;
     CGFloat itemWidth = 120;
     CGFloat itemHeight = 33;
-    UIImage *btbImage = [UIImage imageNamed:@"YDRegButton"];
+    UIImage *btbImage = [UIImage imageNamed:@"LYRegButton"];
     
     [_btnTitles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *tempBtn = [UIButton buttonWithType:UIButtonTypeCustom];

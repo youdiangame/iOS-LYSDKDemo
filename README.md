@@ -3,7 +3,7 @@
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/youdiangame/iOS-LYSDKDemo/master/LICENSE)&nbsp;
 [![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
 
-# [点击查看更新日志](https://github.com/youdiangame/iOS-SDKDemo/blob/master/LYSDKVerisonReadMe.txt 'Title')
+# [点击查看更新日志](https://raw.githubusercontent.com/youdiangame/iOS-LYSDKDemo/master/LYSDKVerisonReadMe.txt 'Title')
 
 # 演示项目
 
@@ -13,7 +13,7 @@
 
 1. 下载 LYSDKDemo 文件夹内的所有内容。<br/>
    <img src="https://github.com/youdiangame/iOS-LYSDKDemo/blob/master/Snapshots/FrameworkPath.png"><br/>
-2. 将 Frameworks 内的 MKSDK.framework 和 MKSDK.xcassets 添加(拖放)到你的工程目录中。
+2. 将 Frameworks 内的 LYSDK.framework 和 LYSDK.xcassets 添加(拖放)到你的工程目录中。
    <img src="https://github.com/youdiangame/iOS-LYSDKDemo/blob/master/Snapshots/Framework.png"><br/>
 3. 在对应项目 Targets 下找到 General。<br/>
    在 Deployment Info 根据游戏需要，自行限制横屏还是竖屏。并且在 AppDelegate 入口限制方向<br/>
@@ -108,14 +108,6 @@ NSString *version = LYSDKVersion;
 ```objective-c
 [[LYSDK lySharedSDK] setLyLogoutBlock:^{
   NSLog(@"注销回调");
-}];
-```
-
-#### 用户关闭支付页面回调方法
-
-```objective-c
-[[MKSDK sharedXSSDK] setPayViewCloseBlock:^{
-    NSLog(@"支付页面关闭的回调");
 }];
 ```
 
