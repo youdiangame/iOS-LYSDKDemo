@@ -31,7 +31,6 @@
     CGFloat itemWidth = 120;
     CGFloat itemHeight = 33;
     UIImage *btbImage = [UIImage imageNamed:@"YDRegButton"];
-    UIImage *btnImageHighlighted = [UIImage imageNamed:@"Button_Highlighted"];
     
     [_btnTitles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *tempBtn = [UIButton buttonWithType:UIButtonTypeCustom];

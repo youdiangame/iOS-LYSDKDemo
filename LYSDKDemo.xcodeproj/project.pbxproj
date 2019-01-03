@@ -10,7 +10,7 @@
 		1C83E68021DDA65700E8DFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C83E67521DDA65700E8DFA5 /* Assets.xcassets */; };
 		1C83E68121DDA65700E8DFA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C83E67621DDA65700E8DFA5 /* ViewController.m */; };
 		1C83E68321DDA65700E8DFA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C83E67921DDA65700E8DFA5 /* main.m */; };
-		1C83E68421DDA65700E8DFA5 /* YDAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C83E67B21DDA65700E8DFA5 /* YDAssets.xcassets */; };
+		1C83E68421DDA65700E8DFA5 /* LYAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C83E67B21DDA65700E8DFA5 /* LYAssets.xcassets */; };
 		1C83E68621DDA65700E8DFA5 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C83E67D21DDA65700E8DFA5 /* AppDelegate.mm */; };
 		1C83E68821DDA66B00E8DFA5 /* LYSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C83E67C21DDA65700E8DFA5 /* LYSDK.framework */; };
 		1C83E68921DDA66B00E8DFA5 /* LYSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C83E67C21DDA65700E8DFA5 /* LYSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -35,7 +35,7 @@
 		1C83E67521DDA65700E8DFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C83E67621DDA65700E8DFA5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1C83E67921DDA65700E8DFA5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1C83E67B21DDA65700E8DFA5 /* YDAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YDAssets.xcassets; sourceTree = "<group>"; };
+		1C83E67B21DDA65700E8DFA5 /* LYAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LYAssets.xcassets; sourceTree = "<group>"; };
 		1C83E67C21DDA65700E8DFA5 /* LYSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LYSDK.framework; sourceTree = "<group>"; };
 		1C83E67D21DDA65700E8DFA5 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		1C83E67E21DDA65700E8DFA5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				1C83E67C21DDA65700E8DFA5 /* LYSDK.framework */,
-				1C83E67B21DDA65700E8DFA5 /* YDAssets.xcassets */,
+				1C83E67B21DDA65700E8DFA5 /* LYAssets.xcassets */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C83E68421DDA65700E8DFA5 /* YDAssets.xcassets in Resources */,
+				1C83E68421DDA65700E8DFA5 /* LYAssets.xcassets in Resources */,
 				1C83E68021DDA65700E8DFA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
