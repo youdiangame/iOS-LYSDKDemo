@@ -28,9 +28,9 @@
 
 - (void)initSDK
 {
-    [[LYSDK lySharedSDK] lyInitWithId:@"AEF6EACFAF3F18795DC48F37BC3A41864"
-                              openKey:@"f56245b440ee04aa9b765bd07791308c"
-                            lyChannel:LYChannelYD
+    [[LYSDK lySharedSDK] lyInitWithId:@"ABEB87E49BA482CF7CCCF4B8F93A4E85B"
+                              openKey:@"c93c587425ad9e04bd365c06b09a4087"
+                            lyChannel:LYChannelLY
                               trackId:@"C92146DE6E7EB663893D797678A50A480"
                               success:^{
                                   
