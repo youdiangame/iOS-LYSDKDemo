@@ -78,7 +78,7 @@
         {
             //支付
             NSString *productId = @"com.ly.sdkdemo.6";
-            NSString *ydProductId = @"P001085";
+            NSString *ydProductId = @"P000735";
             
             
             LYOrder *lyOrder = [LYOrder new];

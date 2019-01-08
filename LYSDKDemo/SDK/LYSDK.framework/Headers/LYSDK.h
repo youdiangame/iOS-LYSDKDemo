@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LYUser.h"
 #import "LYOrder.h"
-
+//#import "LYSDKProguard.h"
 
 //! Project version number for LYSDK.
 FOUNDATION_EXPORT double LYSDKVersionNumber;
