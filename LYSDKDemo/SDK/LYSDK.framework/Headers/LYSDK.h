@@ -22,8 +22,8 @@ FOUNDATION_EXPORT const unsigned char LYSDKVersionString[];
 typedef NS_ENUM(NSInteger, LYChannel) {
     LYChannelYD = 1,              //优点
     LYChannelLY = 2,              //龙游
-    LYChannelTest = 3,            //优点Pro
-    LYChannelYDPro = 4
+    LYChannelTest = 3,            //测试
+    LYChannelYDPro = 4            //优点Pro
 };
 
 
