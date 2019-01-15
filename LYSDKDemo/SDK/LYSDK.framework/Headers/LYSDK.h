@@ -20,8 +20,10 @@ FOUNDATION_EXPORT const unsigned char LYSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <LYSDK/PublicHeader.h>
 
 typedef NS_ENUM(NSInteger, LYChannel) {
-    LYChannelYD = 1,            //优点
-    LYChannelLY = 2             //龙游
+    LYChannelYD = 1,              //优点
+    LYChannelLY = 2,              //龙游
+    LYChannelTest = 3,            //优点Pro
+    LYChannelYDPro = 4
 };
 
 
