@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4D180E21EF3DD400E89C6E /* LYSDKAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C83E67B21DDA65700E8DFA5 /* LYSDKAssets.xcassets */; };
 		1C83E68021DDA65700E8DFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C83E67521DDA65700E8DFA5 /* Assets.xcassets */; };
 		1C83E68121DDA65700E8DFA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C83E67621DDA65700E8DFA5 /* ViewController.m */; };
 		1C83E68321DDA65700E8DFA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C83E67921DDA65700E8DFA5 /* main.m */; };
-		1C83E68421DDA65700E8DFA5 /* LYSDKAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C83E67B21DDA65700E8DFA5 /* LYSDKAssets.xcassets */; };
 		1C83E68621DDA65700E8DFA5 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C83E67D21DDA65700E8DFA5 /* AppDelegate.mm */; };
 		1C9F7F5F21DDF887009B0BDB /* LYSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9F7F5D21DDF880009B0BDB /* LYSDK.framework */; };
 		1C9F7F6021DDF887009B0BDB /* LYSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9F7F5D21DDF880009B0BDB /* LYSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -153,7 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C83E68421DDA65700E8DFA5 /* LYSDKAssets.xcassets in Resources */,
+				1C4D180E21EF3DD400E89C6E /* LYSDKAssets.xcassets in Resources */,
 				1C83E68021DDA65700E8DFA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
