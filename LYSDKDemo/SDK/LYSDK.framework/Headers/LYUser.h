@@ -22,6 +22,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSString *lyUsername;
 
+/**
+ *  用户手机号
+ */
+@property (nonatomic, strong) NSString *lyPhone;
+
+
+
 
 
 @end
