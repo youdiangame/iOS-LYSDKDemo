@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C43A079221CEDAE006F95E0 /* libDataEyeTracking_v1.9.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C43A077221CEDAE006F95E0 /* libDataEyeTracking_v1.9.5.a */; };
 		1C4D180E21EF3DD400E89C6E /* LYSDKAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C83E67B21DDA65700E8DFA5 /* LYSDKAssets.xcassets */; };
 		1C83E68021DDA65700E8DFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C83E67521DDA65700E8DFA5 /* Assets.xcassets */; };
 		1C83E68121DDA65700E8DFA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C83E67621DDA65700E8DFA5 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C43A077221CEDAE006F95E0 /* libDataEyeTracking_v1.9.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDataEyeTracking_v1.9.5.a; sourceTree = "<group>"; };
+		1C43A078221CEDAE006F95E0 /* DCTrackingAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTrackingAgent.h; sourceTree = "<group>"; };
 		1C83E67421DDA65700E8DFA5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C83E67521DDA65700E8DFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C83E67621DDA65700E8DFA5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -49,12 +52,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9F7F5F21DDF887009B0BDB /* LYSDK.framework in Frameworks */,
+				1C43A079221CEDAE006F95E0 /* libDataEyeTracking_v1.9.5.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C43A076221CEDAE006F95E0 /* DataEyeTracking */ = {
+			isa = PBXGroup;
+			children = (
+				1C43A077221CEDAE006F95E0 /* libDataEyeTracking_v1.9.5.a */,
+				1C43A078221CEDAE006F95E0 /* DCTrackingAgent.h */,
+			);
+			path = DataEyeTracking;
+			sourceTree = "<group>";
+		};
 		1C83E67321DDA65700E8DFA5 /* LYSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +86,7 @@
 		1C83E67A21DDA65700E8DFA5 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				1C43A076221CEDAE006F95E0 /* DataEyeTracking */,
 				1C9F7F5D21DDF880009B0BDB /* LYSDK.framework */,
 				1C83E67B21DDA65700E8DFA5 /* LYSDKAssets.xcassets */,
 			);
@@ -293,7 +307,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = H94RLKY663;
+				DEVELOPMENT_TEAM = DVS833394S;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,10 +319,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LYSDKDemo/SDK/DataEyeTracking",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ly.SDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ly_dev_sdkdemo;
+				PROVISIONING_PROFILE_SPECIFIER = All;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -318,9 +336,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = H94RLKY663;
+				DEVELOPMENT_TEAM = DVS833394S;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,10 +350,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LYSDKDemo/SDK/DataEyeTracking",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ly.SDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ly_adhoc_sdkdemo;
+				PROVISIONING_PROFILE_SPECIFIER = All;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
