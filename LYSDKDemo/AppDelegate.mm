@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import <LYSDK/LYSDK.h>
-#import "DCTrackingAgent.h"
+#import <LY/LY.h>
+
 
 @interface AppDelegate ()
 
@@ -19,7 +19,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [DCTrackingAgent initWithAppId:@"" andChannelId:@"AppStore"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [ViewController new];
     [self.window makeKeyAndVisible];
@@ -30,15 +29,13 @@
 
 - (void)initSDK
 {
-    [[LYSDK lySharedSDK] lyInitWithId:@"ABEB87E49BA482CF7CCCF4B8F93A4E85B"
-                              openKey:@"c93c587425ad9e04bd365c06b09a4087"
-                            lyChannel:LYChannelLY
-                              trackId:@"C92146DE6E7EB663893D797678A50A480"
-                              success:^{
-                                  
-                              } failure:^(int errcode, NSString *errorMessage) {
-                                  
-                              }];
+    [[LY lyShared] lyInitWithId:@"ABEB87E49BA482CF7CCCF4B8F93A4E85B"
+                        openKey:@"c93c587425ad9e04bd365c06b09a4087"
+                      lyChannel:LYChannelLY
+                        trackId:@"C92146DE6E7EB663893D797678A50A480"
+                        success:^{
+                        } failure:^(int errcode, NSString *errorMessage) {
+                        }];
 }
 
 

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <LYSDK/LYSDK.h>
+#import <LY/LY.h>
 
 
 @interface ViewController ()
@@ -46,18 +46,18 @@
     
     
     
-    [[LYSDK lySharedSDK] setLyLoginSuccessBlock:^(LYUser *user) {
+    [[LY lyShared] setLyLoginSuccessBlock:^(LYUser *user) {
         long userId = user.lyUserId;
         NSString *userName = user.lyUsername;
         NSLog(@"登录回调");
         NSLog(@"userId - %ld userName - %@", userId, userName);
     }];
     
-    [[LYSDK lySharedSDK] setLyLogoutBlock:^{
+    [[LY lyShared] setLyLogoutBlock:^{
         NSLog(@"注销回调");
     }];
     
-    [[LYSDK lySharedSDK] setLyAppleBlock:^(LYAppleType lyAppleType) {
+    [[LY lyShared] setLyAppleBlock:^(LYAppleType lyAppleType) {
         NSLog(@"苹果支付回调 - %ld", (long)lyAppleType);
     }];
     
@@ -71,7 +71,7 @@
         case 0:
         {
             //登录
-            [[LYSDK lySharedSDK] lyLogin];
+            [[LY lyShared] lyLogin];
             break;
         }
         case 1:
@@ -90,19 +90,19 @@
             [lyOrder setYdCustomInfo:@"CustomInfo"];
             [lyOrder setLyTotalFee:6];
             
-            [[LYSDK lySharedSDK] lySelect:lyOrder];
+            [[LY lyShared] lySelect:lyOrder];
             break;
         }
         case 2:
         {
             //用户中心
-            [[LYSDK lySharedSDK] lyUserCenter];
+            [[LY lyShared] lyUserCenter];
             break;
         }
         case 3:
         {
             //注销
-            [[LYSDK lySharedSDK] lyLogout];
+            [[LY lyShared] lyLogout];
             break;
         }
     }

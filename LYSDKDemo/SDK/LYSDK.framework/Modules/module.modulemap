@@ -1,6 +1,0 @@
-framework module LYSDK {
-  umbrella header "LYSDK.h"
-
-  export *
-  module * { export * }
-}
