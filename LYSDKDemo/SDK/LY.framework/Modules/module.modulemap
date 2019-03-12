@@ -1,6 +1,0 @@
-framework module LY {
-  umbrella header "LY.h"
-
-  export *
-  module * { export * }
-}

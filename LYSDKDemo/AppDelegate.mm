@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import <LY/LY.h>
+#import <LYK/LYK.h>
 
 
 @interface AppDelegate ()
@@ -29,13 +29,14 @@
 
 - (void)initSDK
 {
-    [[LY lyShared] lyInitWithId:@"ABEB87E49BA482CF7CCCF4B8F93A4E85B"
-                        openKey:@"c93c587425ad9e04bd365c06b09a4087"
-                      lyChannel:LYChannelLY
-                        trackId:@"C92146DE6E7EB663893D797678A50A480"
-                        success:^{
-                        } failure:^(int errcode, NSString *errorMessage) {
-                        }];
+    [[LYK lyShared] lyInitWithId:@"AEF6EACFAF3F18795DC48F37BC3A41864"
+                         openKey:@"f56245b440ee04aa9b765bd07791308c"
+                       lyChannel:LYChannelYD
+                         trackId:@"C92146DE6E7EB663893D797678A50A480"
+                         success:^{
+                         } failure:^(int errcode, NSString *errorMessage) {
+                         }];
+    NSLog(@"LYVersion - %@", LYVersion);
 }
 
 
@@ -52,7 +53,7 @@
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering  background.
 }
 
 

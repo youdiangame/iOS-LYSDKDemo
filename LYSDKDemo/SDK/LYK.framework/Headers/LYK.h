@@ -46,7 +46,7 @@ typedef void (^LYLoginSuccessBlock)(LYUser *user);
 typedef void (^LYLogoutBlock)(void);
 typedef void (^LYAppleBlock)(LYAppleType lyAppleType);
 
-@interface LY : NSObject
+@interface LYK : NSObject
 
 
 /**
@@ -78,7 +78,7 @@ typedef void (^LYAppleBlock)(LYAppleType lyAppleType);
  *  获取LYSDK单例
  *  @return LYSDK单例对象
  */
-+ (LY *)lyShared;
++ (LYK *)lyShared;
 
 
 /**
