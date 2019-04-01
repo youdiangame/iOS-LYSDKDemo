@@ -77,8 +77,9 @@
         case 1:
         {
             //支付
-            NSString *productId = @"com.ly.sdkdemo.6";
-            NSString *ydProductId = @"P000735";
+//            NSString *productId = @"com.ly.sdkdemo.6";
+            NSString *productId = @"com.tjcs.60";
+            NSString *ydProductId = @"P000767";
             
             
             LYOrder *lyOrder = [LYOrder new];

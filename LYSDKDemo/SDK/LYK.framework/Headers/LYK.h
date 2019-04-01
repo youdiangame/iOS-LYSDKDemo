@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, LYAppleType) {
  *  当前SDK版本
  */
 extern NSString *const LYVersion;
-//extern NSString *const LYLoginSuccess;
+extern NSString *const LYLoginSuccess;
 
 
 typedef void (^LYLoginSuccessBlock)(LYUser *user);

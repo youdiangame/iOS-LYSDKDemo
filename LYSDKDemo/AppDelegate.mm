@@ -29,9 +29,9 @@
 
 - (void)initSDK
 {
-    [[LYK lyShared] lyInitWithId:@"AEF6EACFAF3F18795DC48F37BC3A41864"
-                         openKey:@"f56245b440ee04aa9b765bd07791308c"
-                       lyChannel:LYChannelYD
+    [[LYK lyShared] lyInitWithId:@"A03702A0860C313D037411CF9A828030A"
+                         openKey:@"cce8e305f046528a61e6c7b41a100d69"
+                       lyChannel:LYChannelLY
                          trackId:@"C92146DE6E7EB663893D797678A50A480"
                          success:^{
                          } failure:^(int errcode, NSString *errorMessage) {
